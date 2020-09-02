@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Include Bootstrap 4 from a CDN -->
+     <!-- Download Bootstrap 4 from getbootstrap.com -->
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+ <!-- main css -->
+ <link rel="stylesheet" href="course.css">
+
+ <!-- google fonts -->
+ <!-- <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> -->
+
+ <!-- font awesome -->
+ <!-- <link rel="stylesheet" href="./css/all.css"> -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div  class="row">
+            <div  class="col-8 mx-auto text-center my-5" style="background-color:lavender;">
+                <!-- <h3 class="text-capitalize">get a free course</h3> -->
+                <h1 class="ml11">
+                    <span class="text-wrapper">
+                      <span class="line line1"></span>
+                      <span class="letters" style="color:  #663399">get a free course</span>
+                    </span>
+                  </h1>
+               
+                <form action="" class="my-4" id="customer-form">
+
+                    <div class="form-group row">
+                        <label for="inputItem" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputName" placeholder="FullName">
+                        </div>
+                    </div>   
+
+                <div class="form-group row">
+                     <label for="inputItem" class="col-sm-2 col-form-label">Course</label>
+                     <div class="col-sm-10">
+                        <div class="input-group mb-1.5">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" >Choose</span>
+                            </div>
+                        <select type="text" class="form-control" id="inputCourse" placeholder="CourseName">
+                        <option> </option>
+                        <option>Programming</option>
+                        <option>FrontEnd</option>
+                        <option>BackEnd</option>
+                        <option>Math</option>
+                        <option>physics</option>
+                        <option>Art</option>
+                        </select>
+                       </div>
+                    </div>
+                </div>   
+
+                    <div class="form-group row">
+                        <label for="inputItem" class="col-sm-2 col-form-label">Professor</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="inputProfessor" placeholder="Professor">
+                        </div>
+                    </div>  
+                    
+                    <button type="button" id="btn" class="btn btn-block submitBtn text-uppercase mt-5" >submit</button>
+                </form>
+
+                <div class="calc text-center text-capitalize">
+                    calculating.....
+                </div>
+
+                <div class="loading">
+                    <img src="./img/loading.gif" alt="">
+                </div>
+
+                <div class="row customer-list">
+                    <div class="col-12 mx-auto col-lg-6  my-3">
+                        <div class="card text-left">
+                            <div class="card-header">
+                                <h6 class="text-capitalize my-1"><span class="badge badge-success mr-1">course :</span>
+                                    <span id="customer-course">css basics</span></h6>
+                            </div>
+                            <img class="card-img-top" src= "" id ="randomImg" alt="Card image">
+                            <div class="card-body">
+                                <h6 class="text-capitalize my-3"><span class="badge badge-warning mr-1">Name : </span>
+                                    <span id="customer-name"> Maryam Farzad</span></h6>
+                                <!-- <h6 class="text-capitalize my-3"><span class="badge badge-success mr-1">course :</span>
+                                    <span id="customer-course">css basics</span></h6> -->
+                                <h6 class="text-capitalize my-3"><span class="badge badge-danger mr-1">Professor :</span>
+                                    <span id="customer-professor">Mr. Lee</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div> 
+    </div>
+    
+    <script src="course.js"></script>
+   
+</body>
+</html>
